@@ -4,12 +4,12 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 1250px;
+  min-height: 1900px;
 }
 
 .u-section-1 .u-group-1 {
-  width: 563px;
-  min-height: 132px;
+  width: 750px;
+  min-height: 185px;
   height: auto;
   margin: 250px auto 0;
 }
@@ -21,7 +21,7 @@
 
 .u-section-1 .u-text-1 {
   line-height: 0.5;
-  font-size: 5.9375rem;
+  font-size: 7.5rem;
   font-family: Chathura;
   font-weight: 700;
   margin: 0 -46px;
