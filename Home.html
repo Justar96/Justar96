@@ -5,34 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Name</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
     /* Custom styles */
-    .hero {
-      background-image: url('path/to/your/background-image.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 0;
-      text-align: center;
-    }
-
-    .hero h1 {
-      color: white;
-    }
-
-    .hero p {
-      color: rgba(255, 255, 255, 0.8);
-    }
   </style>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- ... (navigation content) ... -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Restaurant Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero bg-primary text-white text-center py-5">
+<<section class="hero bg-primary text-white text-center py-5" style="background-image: url('images/S__3883020.jpg'); background-size: cover; background-position: center;">
   <div class="container">
     <h1>Welcome to Restaurant Name</h1>
     <p>Delicious Food for Every Occasion</p>
@@ -42,14 +46,49 @@
 <!-- Recommended Menu -->
 <section id="menu" class="py-5">
   <div class="container">
-    <!-- ... (recommended menu content) ... -->
+    <h2 class="text-center mb-4">Recommended Menu</h2>
+    <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="menu-item-1.jpg" class="d-block w-100" alt="Menu Item 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menu Item 1</h5>
+            <p>Delicious description of menu item 1.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="menu-item-2.jpg" class="d-block w-100" alt="Menu Item 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menu Item 2</h5>
+            <p>Delicious description of menu item 2.</p>
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="bg-light py-5">
   <div class="container">
-    <!-- ... (contact form content) ... -->
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center">Have questions or want to make a reservation? Reach out to us!</p>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form>
+          <!-- Your contact form here -->
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -60,5 +99,40 @@
 
 <!-- Bootstrap 5 JS and jQuery (required for Bootstrap components) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Content Container -->
+<div id="content" class="container mt-5">
+  <!-- Content will be loaded here -->
+</div>
+
+<!-- Custom script -->
+<script>
+  const contentContainer = document.getElementById("content");
+
+  function loadPage(pageName) {
+    if (pageName === "home") {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    fetch(`${pageName}.html`)
+      .then(response => response.text())
+      .then(content => {
+        contentContainer.innerHTML = content;
+      });
+  }
+
+  // Initial page load
+  loadPage("home");
+
+  // Navigation click event
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const page = this.getAttribute("data-page");
+      loadPage(page);
+    });
+  });
+</script>
 </body>
 </html>
