@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Justar96
 - 👀
-- try out https://rabtune.com/
-- https://pla-app.vercel.app/
+- try out https://rabtune.com/ , https://pla-app.vercel.app/
+
 - 📫 How to reach me (nalongkon1996@gmail.com)
 <!---
 Justar96/Justar96 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
