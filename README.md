@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Justar96
 - 👀
-- try out https://rabtune.com/ , https://grompers-app-976497861598.asia-southeast1.run.app/
+- try out https://rabtune.com/
 
 - 📫 How to reach me (nalongkon1996@gmail.com)
 <!---
