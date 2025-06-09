@@ -1,13 +1,10 @@
 - 👋 Hi, I’m @Justar96
 
 
- ________________________________________________________________________
-< Making the Death Star fully operational, with zero exhaust port flaws. >
- ------------------------------------------------------------------------
-  \
-   \   (\__/)
-        (•ㅅ•)  📫 How to reach me (nalongkon1996@gmail.com)
-       / 　 づ 
+# Welcome <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
+
+📫 How to reach me (nalongkon1996@gmail.com)
+
 
 
 
