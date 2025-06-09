@@ -1,7 +1,5 @@
-- 👋 Hi, I’m @Justar96
 
-
-# Welcome <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
+👋 Hi, I’m @Justar96 <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
 
 📫 How to reach me (nalongkon1996@gmail.com)
 
