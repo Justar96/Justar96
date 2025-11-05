@@ -1,6 +1,8 @@
-## Hi there 👋
+⚡ Fun fact:
 
-<!--
+
+<!--![1758204336824](https://github.com/user-attachments/assets/3313116d-961f-432c-b897-b03735ea8102)
+
 **Justar96/Justar96** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
